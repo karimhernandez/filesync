@@ -9,7 +9,7 @@ This fork is an experiment to see how much work filesync requires to:
 
 If you wish to try this out, use the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
 ```sh
-npm install -g git+https://github.com/karimhernandez/filesync#5207380
+npm install -g git+https://github.com/karimhernandez/filesync#develop
 ```
 I don't recommend anyone use this fork for anything with production code.
 
