@@ -6,17 +6,17 @@
   },
   "description": "Enables out of instance record updates for ServiceNow.",
   "dependencies": {
-    "assert-plus": "^0.1.5",
+    "assert-plus": "^0.2.0",
     "chokidar": "^1.4.2",
-    "colors": "^0.6.2",
-    "fs-extra": "^0.16.5",
-    "glob": "^5.0.3",
+    "colors": "^1.1.2",
+    "fs-extra": "^0.26.4",
+    "glob": "^6.0.4",
     "minimist": "^1.1.1",
     "moment": "^2.10.2",
     "node-notifier": "^4.3.1",
     "osx-notifier": "^0.2.1",
     "restify": "^4.0.3",
-    "winston": "^1.0.0"
+    "winston": "^1.1.2"
   },
   "engines": {
     "node": ">=0.12"
