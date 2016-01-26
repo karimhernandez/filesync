@@ -1,6 +1,9 @@
 {
   "name": "FileSync",
   "version": "2.2.3",
+  "bin": {
+    "servicenow": "./lib/app.js"
+  },
   "description": "Enables out of instance record updates for ServiceNow.",
   "dependencies": {
     "assert-plus": "^0.1.5",
