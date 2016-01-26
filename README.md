@@ -7,10 +7,13 @@ This fork is an experiment to see how much work filesync requires to:
 - to be installed via ```npm install -g FileSync```
 - utilize conventions to infer default configurations or running modes
 
-If you wish to try this out, use the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
+If you wish to try this out, install like so:
 ```sh
 npm install -g git+https://github.com/karimhernandez/filesync#develop
 ```
+
+You can also use the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
+
 I don't recommend anyone use this fork for anything with production code.
 
 
