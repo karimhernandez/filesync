@@ -1,11 +1,11 @@
 ### This repo is an experimental fork of [FileSync](https://github.com/dynamicdan/filesync)
 
-I've found DynamicDan's fork of the project useful but have often wanted something that is installable via npm.  Other sorts of developer tools function like this, where a local tool config is checked in along with project source code, and maybe  declared as a devDependency.  The current implementation doesn't support this.
+I've found DynamicDan's fork of the project useful but have often wanted something that is installable via npm and checks for a default configuration.  Other sorts of developer tools function like this, where a local config is checked in along with project source code, and the tool declared as a devDependency.  The current implementation doesn't support this.
 
 This fork is an experiment to see how much work filesync requires to:
 - run under node 0.12 and above
-- to be installed via ```npm install -g FileSync```
-- utilize conventions to infer default configurations or running modes
+- be installed via ```npm install -g FileSync```
+- infer configuration from conventions where appropriate
 
 If you wish to try this out, install like so:
 ```sh
