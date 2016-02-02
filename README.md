@@ -14,7 +14,7 @@ When both of these goals are met, it would be possible to declare FileSync as a 
 
 ##### Current progress:
 
-- [x] installable via npm, something like: ```npm install -g FileSync```
+- [x] installable via npm, something like: ```$ npm install -g FileSync```
 - [x] remove embedded binaries
 - [x] remove platform-specific shell scripts, and instead declare app.js as an executable
 - [x] run under latest versions of node
@@ -29,8 +29,16 @@ When both of these goals are met, it would be possible to declare FileSync as a 
 If you wish to try this out, install like so:
 
 ```sh
-npm install -g git+https://github.com/karimhernandez/filesync#develop
+$ npm install -g git+https://github.com/karimhernandez/filesync#develop
 ```
+
+##### Usage
+
+```sh
+$ servicenow --help
+```
+
+Use the same arguments that you normally would with FileSync.
 
 ##### Develop
 The develop branch is the main branch of this fork and has relatively stable, tested changes.  Checkins first be pushed to the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch, and only after all tests pass and some regular unencumbered usage will they be promoted to develop.
