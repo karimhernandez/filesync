@@ -1,14 +1,16 @@
 ### This repo is an experimental fork of [FileSync](https://github.com/dynamicdan/filesync)
 
-I've found DynamicDan's maintained fork of FileSync very useful, but I have often wanted something a tad easier to use, more easily sharable, possibly usable by a team.  I set out with this fork as an experiment, both to see how much work required to accomplish my goals, and to learn.
+I've found DynamicDan's maintained fork of FileSync very useful, but I have often wanted something a tad easier to use, more easily sharable, and possibly usable by a team.  I set out with this fork as an experiment, both to see how much work is required to accomplish my goals, and to learn more of the nuances of both this tool and servicenow.
 
 ##### Goals
 
 I have two main goals in this experiment.
 
-1) To update as much as I can get away with and allow FileSync to participate in the node/npm ecosystem.  This means no embedded binaries of or dependencies, no custom shell scripts, etc, and instead rely upon the installed version of node, and on npm to install the tool as a cli application.
+1) To update as much as I can get away with and allow FileSync to  participate in the node/npm ecosystem.  This means no embedded binaries of or dependencies, no custom shell scripts, etc, and instead rely upon the installed version of node, and on npm to install the tool as a cli application.
 
 2) Enable better ease of use.  This is more opinionated, and may not be feasible or sensible for the audience, but I'd like the tool to prefer conventions over configuration, and if possible enable scenarios involving multiple users on a team.
+
+When both of these goals are met, it would be possible to declare FileSync as a devDependency of another node-based project, which may in turn enable more use-cases or opportunities for refinement.
 
 ##### Current progress:
 
