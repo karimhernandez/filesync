@@ -1,31 +1,39 @@
 ### This repo is an experimental fork of [FileSync](https://github.com/dynamicdan/filesync)
 
-I've found DynamicDan's maintained fork of FileSync very useful, but I have often wanted something easily sharable, possibly usable by a team.  I set out with this fork as an experiment, both to see how much work required to accomplish my goals, and to learn.
+I've found DynamicDan's maintained fork of FileSync very useful, but I have often wanted something a tad easier to use, more easily sharable, possibly usable by a team.  I set out with this fork as an experiment, both to see how much work required to accomplish my goals, and to learn.
 
-Goals & features, current progress:
+##### Goals
 
-- [x] install via npm, i.e. ```npm install -g FileSync```
-	- [x] remove embedded binaries
-	- [x] rely upon `package.json` & npm to install this tool as a cli program in an environment's `$NODE_PATH / $NPM_PACKAGES`
-- [ ] run under latest versions of node (aleviating the need for embedded binaries)
+I have two main goals in this experiment.
+
+1) To update as much as I can get away with and allow FileSync to participate in the node/npm ecosystem.  This means no embedded binaries of or dependencies, no custom shell scripts, etc, and instead rely upon the installed version of node, and on npm to install the tool as a cli application.
+
+2) Enable better ease of use.  This is more opinionated, and may not be feasible or sensible for the audience, but I'd like the tool to prefer conventions over configuration, and if possible enable scenarios involving multiple users on a team.
+
+##### Current progress:
+
+- [x] installable via npm, something like: ```npm install -g FileSync```
+- [x] remove embedded binaries
+- [x] remove platform-specific shell scripts, and instead declare app.js as an executable
+- run under latest versions of node
 	- [x] node.js 0.12 tested
 	- [ ] io.js tested
 	- [ ] node.js v4.x tested
 	- [ ] node.js v5.x tested
-- [ ] infer configuration from conventions where appropriate
-	- [x] check for default config `app.config.json` if no --config flag is specified
-- [ ] share config `app.config.json`
-	- [ ] seperate config of credentials to instances from `app.config.json`
+- [x] check for default config `app.config.json` in the current directory if no --config flag is specified
+- [ ] separate project/app config `app.config.json` from credentials config
 
+##### Install
 If you wish to try this out, install like so:
 
 ```sh
 npm install -g git+https://github.com/karimhernandez/filesync#develop
 ```
 
-The develop branch has relatively stable changes.  Current changes will first be published to the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
+##### Develop
+The develop branch is the main branch of this fork and has relatively stable, tested changes.  Checkins first be pushed to the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch, and only after all tests pass and some regular unencumbered usage will they be promoted to develop.
 
-However, I **do not recommend** anyone use this fork for anything with production code or important servicenow instances.  I'm still relatively new to this tool, and there may be regressions introduced by my changes that I've yet to uncover.
+However, I **do not recommend** anyone use this fork for anything with production code or important servicenow instances.  I'm still relatively new to this tool, as well as to servicenow, and as such there may be regressions introduced by my changes that I've yet to uncover.
 
 
 FileSync (v3.0.5)
