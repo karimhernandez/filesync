@@ -1,20 +1,31 @@
 ### This repo is an experimental fork of [FileSync](https://github.com/dynamicdan/filesync)
 
-I've found DynamicDan's fork of the project useful but have often wanted something that is installable via npm and checks for a default configuration.  Other sorts of developer tools function like this, where a local config is checked in along with project source code, and the tool declared as a devDependency.  The current implementation doesn't support this.
+I've found DynamicDan's maintained fork of FileSync very useful, but I have often wanted something easily sharable, possibly usable by a team.  I set out with this fork as an experiment, both to see how much work required to accomplish my goals, and to learn.
 
-This fork is an experiment to see how much work filesync requires to:
-- run under node 0.12 and above
-- be installed via ```npm install -g FileSync```
-- infer configuration from conventions where appropriate
+Goals & features, current progress:
+
+- [x] install via npm, i.e. ```npm install -g FileSync```
+	- [x] remove embedded binaries
+	- [x] rely upon `package.json` & npm to install this tool as a cli program in an environment's `$NODE_PATH / $NPM_PACKAGES`
+- [-] run under latest versions of node (aleviating the need for embedded binaries)
+	- [x] node.js 0.12 tested
+	- [ ] io.js tested
+	- [ ] node.js v4.x tested
+	- [ ] node.js v5.x tested
+- [-] infer configuration from conventions where appropriate
+	- [x] check for default config `app.config.json` if no --config flag is specified
+- [ ] share config `app.config.json`
+	- [ ] seperate config of credentials to instances from `app.config.json`
 
 If you wish to try this out, install like so:
+
 ```sh
 npm install -g git+https://github.com/karimhernandez/filesync#develop
 ```
 
-You can also use the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
+The develop branch has relatively stable changes.  Current changes will first be published to the [feature/npm-installable-package](https://github.com/karimhernandez/filesync/tree/feature/npm-installable-package) branch.
 
-I don't recommend anyone use this fork for anything with production code.
+However, I **do not recommend** anyone use this fork for anything with production code or important servicenow instances.  I'm still relatively new to this tool, and there may be regressions introduced by my changes that I've yet to uncover.
 
 
 FileSync (v3.0.5)
