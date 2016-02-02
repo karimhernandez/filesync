@@ -7,12 +7,12 @@ Goals & features, current progress:
 - [x] install via npm, i.e. ```npm install -g FileSync```
 	- [x] remove embedded binaries
 	- [x] rely upon `package.json` & npm to install this tool as a cli program in an environment's `$NODE_PATH / $NPM_PACKAGES`
-- [-] run under latest versions of node (aleviating the need for embedded binaries)
+- [ ] run under latest versions of node (aleviating the need for embedded binaries)
 	- [x] node.js 0.12 tested
 	- [ ] io.js tested
 	- [ ] node.js v4.x tested
 	- [ ] node.js v5.x tested
-- [-] infer configuration from conventions where appropriate
+- [ ] infer configuration from conventions where appropriate
 	- [x] check for default config `app.config.json` if no --config flag is specified
 - [ ] share config `app.config.json`
 	- [ ] seperate config of credentials to instances from `app.config.json`
